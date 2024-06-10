@@ -1,0 +1,767 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+body {
+  color: #fff;
+  
+}
+/* Custom styles for fixed header */
+.fixed-header {
+  position: fixed;
+  background-color: rgba(18, 18, 19, 0.8); /* Transparent background with 80% opacity */
+  top: 1%;
+  left: 5%; /* Adjust left position to 10% of the viewport width */
+  right: 5%; /* Adjust right position to 10% of the viewport width */
+  z-index: 999; /* Ensure the header is above other content */
+  border-radius: 1rem 1rem 1rem 1rem; /* Rounded corners for the bottom */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Very small border with 10% opacity */
+  transition: top 0.5s ease; /* Add smooth transition */
+}
+.fixed-header.hidden {
+  top: -100px; /* Move header above viewport */
+}
+
+
+/* Adjust margin for content to prevent it from being hidden behind fixed header */
+.main-content {
+  margin-top: 20rem; /* Adjust according to your header height */
+}
+
+/* Home Section */
+#home {
+  background-image: url('image/home.png'); /* Replace 'path_to_your_image.png' with the actual path to your image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Calculate full viewport height */
+  
+  
+}
+#home .flex-col {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+}
+
+
+#home .absolute a:hover img {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+
+
+
+.download-icon {
+  display: block;
+  position: absolute;
+  top: 56%;
+  right: 50%;
+  color: #1a202c; /* Adjust color as needed */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+/*breathing effect*/
+.download-icon img {
+  animation: breathe 2s infinite alternate; /* Apply the breathe animation */
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1); /* Initial scale */
+  }
+  100% {
+    transform: scale(1.5); /* Scale up to 110% */
+  }
+}
+
+.text-moved1 {
+  transform: translateX(-1050px) translateY(-30px); /* Adjust the values as needed */
+}
+
+.text-moved2 {
+  transform: translateX(-1050px) translateY(0px); /* Adjust the values as needed */
+}
+
+.text-moved3 {
+  transform: translateX(-1050px) translateY(20px); /* Adjust the values as needed */
+}
+
+.text-moved4 {
+  transform: translateX(-1050px) translateY(100px); /* Adjust the values as needed */
+}
+
+.homemepng {
+  width: 800px;
+  height: 750px;
+  transform: translateX(615px) translateY(80px); /* Adjust the values as needed */
+
+}
+
+
+/* About Section */
+#about {
+  background-image: url('image/about.png'); /* Replace 'path_to_your_image.png' with the actual path to your image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Calculate full viewport height */
+  
+}
+.Aboutme{
+  transform: translateX(750px) translateY(-10px); /* Adjust the values as needed */
+  color: #fcfcfc;
+  font-size: 180px;
+  font-family: "Times New Roman", serif;
+}
+
+.Aboutmepng {
+  width: 500px;
+  height: 600px;
+  transform: translateX(50px) translateY(100px); /* Adjust the values as needed */
+
+}
+
+.justified-text{
+  width: 40%; /* Adjust the width as needed */
+  float: right; /* Aligns the container to the right */
+  text-align: justify;
+  text-justify: inter-word; /* Controls spacing between words */
+  padding: 1.5rem; /* Optional: Adds some padding */
+  font-size: 1.5rem; /* Optional: Adjusts font size */
+  margin-top: 10rem;
+  margin-right: 12rem;
+}
+
+/* Skills Section */
+#skills {
+ 
+  background-image: url('image/skills.png'); /* Replace 'path_to_your_image.png' with the actual path to your image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Calculate full viewport height */
+
+  /**/
+  
+  
+}
+.Myskills{
+  transform: translateX(-50px) translateY(-350px); /* Adjust the values as needed */
+  color: #fcfcfc;
+  font-size: 180px;
+  font-family: "Times New Roman", serif;
+}
+
+
+
+
+
+
+
+
+.container1 {
+  width: 600px;
+  height: 500px;
+  padding: 75px 90px;
+  margin-left: -250px;
+  transform: translateY(30px) translateX(-100%);  
+}
+
+.heading1 {
+  text-align: center;
+  font-size: 40px;
+  transform: translateY(-55px) translateX(0%);  
+
+}
+.heading2 {
+  text-align: center;
+  font-size: 40px;
+  transform: translateY(0px) translateX(17%);  
+
+}
+.bar {
+  font-size: 23px;
+}
+
+.Technical-bars .bar {
+  margin: 20px 0;
+}
+
+.Technical-bars .bar:first-child {
+  margin-top: 0;
+}
+
+.Technical-bars .bar:last-child {
+  margin-bottom: 0;
+}
+
+.Technical-bars .bar .info {
+  margin-bottom: 5px;
+}
+
+.Technical-bars .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.Technical-bars .bar .progress-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: #000000;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@keyframes animate {
+  100% {
+      transform: scaleX(1);
+  }
+}
+
+
+.Technical-bars .bar .progress-line span {
+  height: 100%;
+  background-color: #0ef;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.progress-line.html span {
+  width: 90%;
+}
+
+.progress-line.css span {
+  width: 60%;
+}
+
+.progress-line.javascript span {
+  width: 50%;
+}
+
+.progress-line.python span {
+  width: 60%;
+}
+
+.progress-line.java span {
+  width: 70%;
+}
+
+.progress-line span::after {
+  position: absolute;
+  padding: 1px 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  top: -28px;
+  right: -20px;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+.progress-line.html span::after {
+  content: "90%";
+}
+
+.progress-line.css span::after {
+  content: "60%";
+}
+
+.progress-line.javascript span::after {
+  content: "50%";
+}
+
+.progress-line.python span::after {
+  content: "60%";
+}
+
+.progress-line.progress-line.java span::after {
+  content: "70%";
+}
+
+.progress-line span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  top: -10px;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+@keyframes showText {
+  100% {
+      opacity: 1;
+  }
+}
+
+
+.container2 {
+  width: 600px;
+  height: 500px;
+ 
+  margin-left: -250px;
+  transform: translateY(50px) translateX(0%);  
+}
+
+.radial-bars {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.radial-bars .radial-bar {
+  width: 50%;
+  height: 170px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.radial-bars .radial-bar svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate (-50%, -50%) rotate(-90deg);
+  width: 200px;
+  height: 200px;
+}
+
+.radial-bars .radial-bar .progress-bar {
+  stroke-width: 10;
+  stroke: black;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+  100% {
+      stroke-dashoffset: -1;
+  }
+}
+
+.path {
+  stroke-width: 10;
+  stroke: #0ef;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+.path-1 {
+  animation: animate-path1 1s 1s linear forwards;
+}
+
+.path-2 {
+  animation: animate-path2 1s 1s linear forwards;
+}
+
+.path-3 {
+  animation: animate-path3 1s 1s linear forwards;
+}
+
+.path-4 {
+  animation: animate-path4 1s 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+  100% {
+      stroke-dashoffset: 100;
+  }
+}
+
+@keyframes animate-path2 {
+  100% {
+      stroke-dashoffset: 50;
+  }
+}
+
+@keyframes animate-path3 {
+  100% {
+      stroke-dashoffset: 150;
+  }
+}
+
+@keyframes animate-path4 {
+  100% {
+      stroke-dashoffset: 20;
+  }
+}
+
+.radial-bar .percentage {
+  position: absolute;
+  top: 100%;
+  left: 75%;
+  transform: translate (-50%, -50%);
+  font-size: 25px;
+  font-weight: 500;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+.text {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 85%;
+  bottom: -85%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 500;
+  animation: showText 0.5 1s linear forwards;
+  opacity: 0;
+}
+
+/* Education Section */
+#education {
+  background-image: url('image/education.png'); /* Replace 'path_to_your_image.png' with the actual path to your image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Calculate full viewport height */
+  
+}
+.myedu{
+  transform: translateX(600px) translateY(50px); /* Adjust the values as needed */
+  color: #fcfcfc;
+  font-size: 180px;
+  font-family: "Times New Roman", serif;
+}
+.boy {
+  width: 550px;
+  height: 700px;
+  transform: translateX(-50px) translateY(50px); /* Adjust the values as needed */
+
+}
+.education_details{
+  transform: translateX(-250px)translateY(100px);
+}
+
+
+
+/* Projects Section */
+#projects {
+  .myprojects{
+    transform: translateX(+200px) translateY(-350px); /* Adjust the values as needed */
+    color: #fcfcfc;
+    font-size: 180px;
+    font-family: "Times New Roman", serif;
+  }
+  background-image: url('image/projects.png'); /* Replace 'path_to_your_image.png' with the actual path to your image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Calculate full viewport height */
+  
+  *
+  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  }
+  
+  .container
+  {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+  }
+  .container .card {
+  position: relative;
+  width: 340px;
+  height: 500px;
+  margin: 30px;
+  padding-top: 50px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  top: 100px;
+  
+  }
+  .container .card .content
+  {
+  padding: 20px;
+  text-align: center;
+
+
+  transition: 0.5s;
+  } 
+
+  .container .card .content h2
+  {
+  position: absolute;
+  top: -40px;
+  right: 2px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  }
+  .container .card .content h3
+  {
+  font-size: 1.8em;
+  color: #fff;
+  z-index: 1;
+  }
+  .container .card .content p
+  {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+  }
+  .container .card .content a
+  {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 80px;
+  background: #fff;
+  color: #3b1cc4;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+}
+
+
+/* Experience Section */
+#experience {
+  background-image: url('image/experience.png'); /* Replace 'path_to_your_image.png' with the actual path to your image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Calculate full viewport height */
+  
+}
+.exp{
+  transform: translateX(+200px) translateY(-300px); /* Adjust the values as needed */
+  color: #fcfcfc;
+  font-size: 180px;
+  font-family: "Times New Roman", serif;
+}
+/* Contact Section */
+
+/* Contact Section */
+#contact {
+  background-image: url('image/contact.png'); /* Replace 'path_to_your_image.png' with the actual path to your image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Calculate full viewport height */
+}
+.contactme{
+  transform: translateX(+300px) translateY(-300px); /* Adjust the values as needed */
+  color: #fcfcfc;
+  font-size: 180px;
+  font-family: "Times New Roman", serif;
+}
+.left-container {
+  width: 25%;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  display: flex; /* Align items in one line */
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-icons a {
+  margin-right: 10px; /* Add margin between social icons */
+  transform: translateX(-80px);
+}
+
+.left-container p {
+  margin: 10px 0; /* Add margin to the paragraphs */
+  transform: translateX(-80px);
+}
+
+.social-icons {
+  margin-top: 20px; /* Add margin to the social icons */
+}
+
+/* hover effect */
+.social-icons a:hover img {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+.btn.btn2  {
+  background-color: #007bff; /* Adjust as needed */
+  color: white; /* Set text color to white */
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: -10px;
+  
+  margin-left:-80px;
+  
+  
+}
+
+.btn.btn2:hover {
+  background-color: #0056b3; /* Adjust as needed */
+  
+}
+
+
+.sub-title {
+  transform: translateX(-80px); /* Adjust as needed */
+}
+
+.contact-left p {
+  transform: translateY(50px); /* Adjust as needed */
+}
+
+
+
+.btn.btn2 {
+  transform: translateY(30px); /* Adjust as needed */
+}
+
+.left-container .phone {
+  transform: translateX(-340px) translateY(-210px);
+}
+
+.left-container .email {
+  transform: translateX(-400px) translateY(-315px);
+}
+
+.left-container .gps {
+  transform: translateX(-460px) translateY(-110px);
+}
+
+
+.right-container {
+  width: 35%;
+  padding: 40px;
+  color: white;
+  text-align: left;
+  display: flex; /* Align items in one line */
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translate(0%,1.5%);
+}
+
+.right-container form {
+  width: 100%;
+}
+
+.right-container label {
+  margin-bottom: 10px;
+}
+
+.right-container input,
+.right-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.right-container .btn-submit {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: translateX(250px);
+}
+
+.right-container .btn-submit:hover {
+  background-color: #0056b3;
+}
+/* message after submit*/
+#msg{
+  color: #12b73e;
+  margin-top: 10px;
+  display: block;
+  font-size: 1.5em;
+  transform: translateX(50px)
+}
+
+
+
+nav ul li a {
+  position: relative;
+}
+
+/* Remove the underline */
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0; /* Set height to 0 to remove the underline */
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+/* Glow effect on hover */
+nav ul li a:hover::after {
+  background-color: #fff; /* Change this to the color you want for the glow */
+  box-shadow: 0px 0px 15px 2px rgba(255, 255, 255, 0.75); /* Add glow effect */
+}
+
+/* Hide the default scrollbar */
+body {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: transparent transparent; /* Firefox */
+}
+
+/* Define a custom scrollbar track */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Define the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the thumb */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Glow effect on thumb when moved */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fff; /* Change color on hover */
+  box-shadow: 0 0 10px #fff; /* Glow effect */
+}
+
+/* Define the scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track */
+}
+
+
+
+
+
