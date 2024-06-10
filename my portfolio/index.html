@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishwak Portfolio</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!--include Font Awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-hHjOMG0M4rDYYANmG81a8W9ViH+0GV6jrjxID80NwaTatUodttVxDXrYTugAj+/5" crossorigin="anonymous">
+    <!--include boxixons icon on skill page-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body class="bg-gray-100 font-sans">
+
+   <!-- Navigation Bar -->
+   <header class="fixed-header" id="header">   
+    <nav class="bg-blue-500 p-4 fixed-header" id="navbar">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center"> <!-- Use flexbox to align items horizontally -->
+                <img src="image/v.png" class="h-7 mr-0"> <!-- Add margin to create space between the image and text -->
+                <h1 class="text-white text-xl font-bold">ISHWAK</h1>
+            </a>
+            <ul class="flex">
+                <li><a href="#home" class="text-white hover:underline mr-4">Home</a></li>
+                <li><a href="#about" class="text-white hover:underline mr-4">About</a></li>
+                <li><a href="#skills" class="text-white hover:underline mr-4">Skills</a></li>
+                <li><a href="#education" class="text-white hover:underline mr-4">Education</a></li>
+                <li><a href="#projects" class="text-white hover:underline mr-4">Projects</a></li>
+                <li><a href="#experience" class="text-white hover:underline mr-4">Experience</a></li>
+                <li><a href="#contact" class="text-white hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+
+
+    <!-- home Content -->
+    <section id="home" class="mb-0 h-screen flex justify-center items-center">
+       
+        <div class="absolute top-1/2 right-4 transform -translate-y-1/2 flex flex-col items-end space-y-8">
+            <a href="https://www.linkedin.com/in/vishwak-gandhi-8a4bb6152/" target="_blank" class="text-blue-500 hover:text-blue-600 relative" title="LinkedIn">
+                <img src="image/linkedin.png"  class="h-7">
+                <span class="hidden group-hover:inline">LinkedIn</span>
+            </a>
+            <a href="https://www.facebook.com/vishwak.gandhi.1008/" target="_blank" class="text-blue-500 hover:text-blue-600 relative" title="Facebook">
+                <img src="image/facebook.png"  class="h-7">
+                <span class="hidden group-hover:inline">Facebook</span>
+            </a>
+            <a href="https://x.com/?lang=en" target="_blank" class="text-blue-500 hover:text-blue-600 relative" title="Twitter">
+                <img src="image/twitter.png"  class="h-7">
+                <span class="hidden group-hover:inline">Twitter</span>
+            </a>
+            <a href="https://www.instagram.com/vishwakgandhi?igsh=MmIyZ2c5bm5qMnRt" target="_blank" class="text-blue-500 hover:text-blue-600 relative" title="Instagram">
+                <img src="image/instagram.png"  class="h-7">
+                <span class="hidden group-hover:inline">Instagram</span>
+            </a>
+            <a href="https://github.com/VishwakGandhi" target="_blank" class="text-blue-500 hover:text-blue-600 relative" title="GitHub">
+                <img src="image/github.png" class="h-7">
+                <span class="hidden group-hover:inline">GitHub</span>
+            </a>
+            
+        </div>
+
+        <!-- CV Download Logo -->
+        <div class="download-icon" style="bottom: 38%; right: 52.2%;" title="Download CV">
+            <a href="https://drive.google.com/file/d/10Ese0RsqVBhO2rrzaquPv-80qJiQL6H6/view?usp=drive_link" download target="_blank">
+                <img src="image/download.png" class="h-12">
+            </a>
+        </div>
+        
+        <img src="image/me.png" alt="about me png " class="homemepng">
+
+        <div>
+          <h2 class="text-2xl font-bold mb-4 text-moved1" >Hello, Welcome</h2>
+          <h2 class="font-bold mb-4 text-moved2" style="font-size: 3rem;">I'm Vishwak Gandhi</h2>
+          <p class="mb-4 text-2xl font-bold text-moved3">A Software Engineer passionate about<br>creating innovative solutions to real-world<br>problems.With a focus on both frontend<br>and backend development.</p>
+          <p class="mb-4 text-moved4">Explore my projects and experiences below!</p>
+        </div>
+      </section>
+        
+        <!-- About Section -->
+        <section id="about" class="mb-0 h-screen flex justify-center items-center">
+          <div>
+              <h1 class="text-xl font-bold mb-2 Aboutme">About me</h1>
+              <img src="image/aboutme.png" alt="about me png " class="Aboutmepng">
+          </div>
+          <div class="justified-text">
+            <p class="font-bold">
+                I'm a B.Tech student specializing in software engineering, driven by a passion for solving real-world problems through technology. I am currently building my skills in both frontend and backend development, and I'm dedicated to continuous learning and improvement. I enjoy tackling complex challenges and creating seamless user experiences. Excited about the future, I aim to leverage cutting-edge technologies to drive innovation and efficiency in my work.
+            </p>
+      </section>
+
+        <!-- Skills Section -->
+<section id="skills" class="mb-0 h-screen flex justify-center items-center">
+    <div class="text-center">
+        <h3 class="text-xl font-bold mb-2 Myskills">My Skills</h3>
+    </div>
+
+    <!-- Progress bar animation -->
+    <div class="container1">
+        <h2 class="heading1">Technical Skills</h2>
+        <div class="Technical-bars">
+            <div class="bar">
+                <i style="color: #c95d2e" class='bx bxl-html5'></i>
+                <div class="info"><span>HTML</span></div>
+                <div class="progress-line html"><span></span></div>
+            </div> 
+            <div class="bar">
+                <i style="color: #147bbc" class='bx bxl-css3'></i>
+                <div class="info"><span>CSS</span></div>
+                <div class="progress-line css"><span></span></div>
+            </div>
+            <div class="bar">
+                <i style="color: #b0bc1e" class='bx bxl-javascript'></i>
+                <div class="info"><span>Javascript</span></div>
+                <div class="progress-line javascript"><span></span></div>
+            </div>
+            <div class="bar">
+                <i style="color: #c32ec9" class='bx bxl-python'></i>
+                <div class="info"><span>Python</span></div>
+                <div class="progress-line python"><span></span></div>
+            </div>
+            <div class="bar">
+                <i style="color: #69bcbc;  font-size: 2rem" class='bx bxl-java'></i>
+                <div class="info"><span>Java</span></div>
+                <div class="progress-line java"><span></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <h1 class="heading2">Professional Skills</h1>
+        <div class="radial-bars">
+            <div class="radial-bar">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">80%</div>
+                <div class="text">Creativity</div>
+            </div> 
+            <div class="radial-bar">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">90%</div>
+                <div class="text">Communication</div>
+            </div> 
+            <div class="radial-bar">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">70%</div>
+                <div class="text">Problem Solving</div>
+            </div> 
+            <div class="radial-bar">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">98%</div>
+                <div class="text">Teamwork</div>
+            </div> 
+        </div>
+    </div>
+</section>
+
+      
+
+        <!-- Education Section -->
+        <section id="education" class="mb-0 h-screen flex justify-center items-center">
+          <div class="text-center">
+              <h3 class="text-xl font-bold mb-2 myedu">MyEducation</h3>
+
+              <img src="image/boy.png" alt="about me png " class="boy">
+
+          </div>
+          <div class="education_details">
+            <p class="font-bold" style="font-size: 1.2rem;" >
+                <span style="font-size: 2rem; color: #db3ba1;">MIT World Peace University,</span> Pune<br>
+                July 2021-july 2025<br>
+                Final.Y B.Tech CSE<br>
+                Tri-II : 8.83 | Tri-III : 8.80 | Sem-III : 8.55 | Sem-IV : 7.26 | Sem-V : 8
+            </p>
+            <br>
+            <p class="font-bold" style="font-size: 1.2rem;" >
+                <span style="font-size: 2rem; color: #db3ba1;">Chaitanya International School,</span> Baramati<br>
+                2019-2021<br>
+                12th | MSBSHSE | Percentage:86.50
+            </p>
+            <br>
+            <p class="font-bold" style="font-size: 1.2rem;" >
+                <span style="font-size: 2rem; color: #db3ba1;">Podar International School,</span>Baramati<br>
+                2019<br>
+                10th | CBSE | Percentage:88.70
+            </p>
+      </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-0 h-screen flex justify-center items-center">
+            <div class="My-project">
+                <h1 class="text-xl font-bold mb-2 myprojects">Projects</h1>
+            </div>
+
+            <div class="container">
+                <div class="card">
+                    <div class="content">
+                        <h2>01</h2>
+                        <h3>Gesture Controller Using Python</h3>
+                        <br>
+                        <br>
+                        <p>It allows users to control screen brightness and volume by detecting specific hand movements in front of the camera.</p>
+                        <a href="https://github.com/VishwakGandhi/Gesture-Controller-Using-Pytho" target="_blank">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2>02</h2>
+                        <h3>Travel Guide using Android Studio</h3>
+                        <br>
+                        <p>IndiaExplorer is your all-in-one guide to uncovering the best of India. Discover must-try local cuisines, iconic historic sites, breathtaking beaches, and more.</p>
+                        <a href=https://github.com/VishwakGandhi/travel-guide-androidstudio-app target="_blank">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2>03</h2>
+                        <h3>Shopping website using FSD</h3>
+                        <br>
+                        <br>
+                        <p>A group project in which we develop an e-commerce platform developed using Full-Stack Development (FSD) technology.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        
+  
+      </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-0 h-screen flex justify-center items-center">
+          <div class="text-center">
+              <h1 class="text-xl font-bold mb-2 exp">Experience</h1>
+              <p>Internship at Kosha Solutions (2023-2024)</p>
+          </div>
+      </section>
+
+        <!-- Contact Section -->
+        
+        <section id="contact" class="h-screen flex justify-center items-center">
+            <div class="text-center">
+                <h1 class="text-xl font-bold mb-2 contactme">Contact</h1>
+            </div>
+            <!---leftt container--->
+            <div class="left-container flex flex-col">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="sub-title text-2xl font-bold">Email</h1>
+                <p><a href="mailto:vishwakgandhi21@.com"><i class="Email"></i> vishwakgandhi21@.com</a></p>
+                <br>
+                <h1 class="sub-title text-2xl font-bold">Phone</h1>
+                <p><a href="tel:+919527429108"><i class="phone"></i> +919527429108</a></p>
+                <br>
+                <h1 class="sub-title text-2xl font-bold">Address</h1>
+                <p><i class="address"></i> Kothrud,Pune,Maharashtra,India<br>411038</p>
+                <div class="social-icons flex">
+                    <a href="https://www.linkedin.com/in/vishwak-gandhi-8a4bb6152/" target="_blank" class="text-blue-500 hover:text-blue-600 relative" title="LinkedIn"><img src="image/linkedin.png"  class="h-7"></a>
+                    <a href="https://www.facebook.com/vishwak.gandhi.1008/" target="_blank" class="text-blue-500 hover:text-blue-600 relative" title="Facebook"><img src="image/facebook.png"  class="h-7"></a>
+                    <a href="https://x.com/?lang=en" target="_blank" class="text-blue-500 hover:text-blue-600 relative" title="Twitter"><img src="image/twitter.png"  class="h-7"></a>
+                    <a href="https://www.instagram.com/vishwakgandhi?igsh=MmIyZ2c5bm5qMnRt" target="_blank" class="text-blue-500 hover:text-blue-600 relative" title="Instagram"><img src="image/instagram.png"  class="h-7"></a>
+                    <a href="https://github.com/VishwakGandhi" target="_blank" class="text-blue-500 hover:text-blue-600 relative" title="GitHub"><img src="image/github.png"  class="h-7"></a>
+                    <a href="tel:+919527429108" class="phone"><img src="image/phone.png"  class="h-12"></a>
+                    <a href="mailto:vishwakgandhi21@.com" class="email"><img src="image/mail.png"  class="h-12"></a>
+                    <a  class="gps"><img src="image/gps.png"  class="h-16"></a>
+                </div>
+                <br>
+                <a href="https://drive.google.com/file/d/10Ese0RsqVBhO2rrzaquPv-80qJiQL6H6/view?usp=drive_link" download target="_blank" class="btn btn2 mt-4">Download  Resume</a>
+                </div>
+            <!---right container--->
+                <div class="right-container flex flex-col items-center">
+                    <form name="submit-to-google-sheet" method="post">
+                        <div class="mb-4">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="mb-4"></div>
+                            <label for="name" class="block text-white">Your Name:</label>
+                            <input type="text" id="name" name="Name"placeholder="Your Name" class="bg-gray-200 rounded-md p-3" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-white">Your Email:</label>
+                            <input type="email" id="email" name="Email" placeholder="Your Email"class="bg-gray-200 rounded-md p-3" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-white">Your Message:</label>
+                            <textarea id="message" name="Message" placeholder="Your Message" rows="4" class="bg-gray-200 rounded-md p-3"></textarea>
+                        </div>
+                        <br>
+                        <br>
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </form>
+                    <span id="msg"><span>
+                </div>
+        </section>
+        
+            
+            
+        
+    </div>
+
+    <script src="script.js"></script>
+
+<!----for joining google sheet -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwdeqoGc5-ervNgwIOFOGcyKiX9oWmRzwqQcipJFO1LPM9vw_EHSXjCy66mAPmOBKK8/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message send successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+    VanillaTilt.init(document.querySelectorAll(".card"),{
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glar": 1,
+    
+    });</Script>
+
+</body>
+</html>
+
